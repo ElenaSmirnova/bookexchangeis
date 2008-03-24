@@ -2,9 +2,6 @@
 
 Список ссылок:
 
-* *Стиль кодирования* [http://local.joelonsoftware.com/mediawiki/index.php/Как_заставить_неправильный_код_выглядеть_неправильно]
-
-
 1.	[http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/netstart/html/sdkstart.asp]
 
 2.	[http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpcongettingstartedwithnetframework.asp]
@@ -59,4 +56,3 @@
 
 
 13.	*Руководство по разработке библиотек классов* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpgenref/html/cpconNETFrameworkDesignGuidelines.asp]
-
