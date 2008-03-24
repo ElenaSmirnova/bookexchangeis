@@ -1,0 +1,32 @@
+#summary Полезные ссылки 2
+
+Список ссылок:
+
+1.	*Знакомство с формами Windows Forms* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/vbcon/html/vbconIntroductionToWFCForms.asp]
+
+
+2.	*Доступ к данным с помощью ADO.NET* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpconaccessingdatawithadonet.asp]
+
+3.	*Создание и использование объектов DataSet* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpconcreatingusingdatasets.asp]
+
+
+4.	*Использование объекта DataSet с существующими данными* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpconusingdatasetwithexistingdata.asp]
+
+
+5.	*Использование провайдеров данных .NET Framework для доступа к данным* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpconusingadonetproviderstoaccessdata.asp]
+
+
+6.	*Заполнение объекта DataSet из объекта DataAdapter* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/RUS/cpguide/html/cpconpopulatingdatasetfromdataadapter.asp]
+
+7.	*Erwin – для генерации sql скриптов для создания и модификации базы данных* [http://www.interface.ru/home.asp?artId=101]
+
+8.	*Используем для выполнения скриптов BatchAccess * [http://rsdn.ru/article/files/progs/BatchAccess.xml]
+
+9.	*Справочник по sql *[http://office.microsoft.com/ru-ru/access/CH100728991049.aspx]
+
+10.	*Введение в реляционные базы данных *[http://www.intuit.ru/department/database/rdbintro/]
+
+11.	*Основы SQL* [http://www.intuit.ru/department/database/sql/]
+
+12.	*Основы проектирования реляционных баз данных* [http://www.intuit.ru/department/database/rdbdev/]
+
