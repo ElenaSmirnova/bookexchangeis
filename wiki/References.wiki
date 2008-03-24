@@ -1,0 +1,62 @@
+#summary Полезные сылки.
+
+Список ссылок:
+
+* *Стиль кодирования* [http://local.joelonsoftware.com/mediawiki/index.php/Как_заставить_неправильный_код_выглядеть_неправильно]
+
+
+1.	[http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/netstart/html/sdkstart.asp]
+
+2.	[http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpcongettingstartedwithnetframework.asp]
+
+3.	[http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpovrIntroductionToNETFrameworkSDK.asp]
+
+4.	[http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpovrDocumentationMapByTechnologyArea.asp]
+
+*Введение в библиотеку классов .NET Framework*
+
+*Доступ к данным с помощью ADO.NET*
+
+*Домены приложений *
+
+*Программирование с использованием доменов приложений и сборок*
+
+*Общие сведения о сборках* 
+
+*Программирование с использованием доменов приложений и сборок*
+
+*Общеязыковая среда выполнения* 
+
+*Отладка и профилирование приложений*
+
+*Расширенная поддержка режима разработки*
+
+*Типы форматирования* 
+
+*Общие сведения о форматировании*
+
+*Использование XML в .NET Frameworkм
+
+5.	[http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpguide/html/cpconbuildingconsoleapplications.asp]
+
+
+
+6.	*Для справки* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/netstart/html/cpconglossary.asp]
+
+7.	*описание терминов* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cptutorials/html/introduction_to_developing_with_the__net_framework.asp]
+
+
+8. *учебник*  [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cptutorials/html/common_concepts_for_development.asp]
+
+9. *учебник*  [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cptutorials/html/hello_world.asp]
+
+10. *учебник* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cptutorials/html/clients_for_the_simple_components.asp]
+
+11.	*справочник* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/RUS/netstart/html/cpframeworkref_start.asp]
+
+
+12.	*пространства имен* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpref/html/cpref_start.asp]
+
+
+13.	*Руководство по разработке библиотек классов* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/rus/cpgenref/html/cpconNETFrameworkDesignGuidelines.asp]
+
