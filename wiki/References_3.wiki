@@ -3,4 +3,5 @@
 Список ссылок:
 
 1.	*svn* [http://svnbook.red-bean.com/nightly/ru/index.html]
+
 2.    *паттерны проектирования* [http://ru.wikipedia.org/wiki/Одиночка_(шаблон_проектирования)] как то так, потом выложу лучше вариант
