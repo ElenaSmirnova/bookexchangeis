@@ -133,7 +133,11 @@ class DataBaseManager {
         Adapter.Fill(Result);
         return Result;
       case RequestType.DELETE:
-      case RequestType.INSERT:
+      case RequestType.INSERT: //this must be to insert new users
+          OleDbDataAdapter Adapter1 = new OleDbDataAdapter(Command);
+          DataSet Result1 = new DataSet();
+          Adapter1.Fill(Result1);
+          return Result1;
       case RequestType.UPDATE:
       return Command.ExecuteNonQuery();
     }
