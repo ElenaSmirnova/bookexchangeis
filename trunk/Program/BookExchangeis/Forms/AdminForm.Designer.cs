@@ -19,13 +19,14 @@ partial class AdminForm {
       this.UsersTab = new System.Windows.Forms.TabPage();
       this.SaveBt = new System.Windows.Forms.Button();
       this.UsersView = new System.Windows.Forms.DataGridView();
+      this.IdColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.LoginColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.PasswordColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.StatusColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
       this.SurnameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.MiddleNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.RoleColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-      this.LoginColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.PasswordColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.StatusColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
       this.tabControl1.SuspendLayout();
       this.BooksPage.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.BooksView)).BeginInit();
@@ -90,31 +91,46 @@ partial class AdminForm {
       // 
       // UsersView
       // 
+      this.UsersView.AllowUserToDeleteRows = false;
       this.UsersView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.UsersView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdColumn,
+            this.LoginColumn,
+            this.PasswordColumn,
             this.NameColumn,
-            this.StatusColumn,
             this.SurnameColumn,
             this.MiddleNameColumn,
             this.RoleColumn,
-            this.LoginColumn,
-            this.PasswordColumn});
+            this.StatusColumn});
       this.UsersView.Location = new System.Drawing.Point(8, 6);
       this.UsersView.Name = "UsersView";
       this.UsersView.Size = new System.Drawing.Size(639, 273);
       this.UsersView.TabIndex = 0;
+      // 
+      // IdColumn
+      // 
+      this.IdColumn.DataPropertyName = "id_user";
+      this.IdColumn.HeaderText = "Id";
+      this.IdColumn.Name = "IdColumn";
+      this.IdColumn.ReadOnly = true;
+      // 
+      // LoginColumn
+      // 
+      this.LoginColumn.DataPropertyName = "log";
+      this.LoginColumn.HeaderText = "Login";
+      this.LoginColumn.Name = "LoginColumn";
+      // 
+      // PasswordColumn
+      // 
+      this.PasswordColumn.DataPropertyName = "pass";
+      this.PasswordColumn.HeaderText = "Password";
+      this.PasswordColumn.Name = "PasswordColumn";
       // 
       // NameColumn
       // 
       this.NameColumn.DataPropertyName = "name";
       this.NameColumn.HeaderText = "Name";
       this.NameColumn.Name = "NameColumn";
-      // 
-      // StatusColumn
-      // 
-      this.StatusColumn.DataPropertyName = "user_status_id";
-      this.StatusColumn.HeaderText = "Status";
-      this.StatusColumn.Name = "StatusColumn";
       // 
       // SurnameColumn
       // 
@@ -136,17 +152,11 @@ partial class AdminForm {
       this.RoleColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
       this.RoleColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
       // 
-      // LoginColumn
+      // StatusColumn
       // 
-      this.LoginColumn.DataPropertyName = "log";
-      this.LoginColumn.HeaderText = "Login";
-      this.LoginColumn.Name = "LoginColumn";
-      // 
-      // PasswordColumn
-      // 
-      this.PasswordColumn.DataPropertyName = "pass";
-      this.PasswordColumn.HeaderText = "Password";
-      this.PasswordColumn.Name = "PasswordColumn";
+      this.StatusColumn.DataPropertyName = "user_status_id";
+      this.StatusColumn.HeaderText = "Status";
+      this.StatusColumn.Name = "StatusColumn";
       // 
       // AdminForm
       // 
@@ -173,11 +183,12 @@ partial class AdminForm {
   private System.Windows.Forms.DataGridView BooksView;
   private System.Windows.Forms.DataGridView UsersView;
   private System.Windows.Forms.Button SaveBt;
+  private System.Windows.Forms.DataGridViewTextBoxColumn IdColumn;
+  private System.Windows.Forms.DataGridViewTextBoxColumn LoginColumn;
+  private System.Windows.Forms.DataGridViewTextBoxColumn PasswordColumn;
   private System.Windows.Forms.DataGridViewTextBoxColumn NameColumn;
-  private System.Windows.Forms.DataGridViewComboBoxColumn StatusColumn;
   private System.Windows.Forms.DataGridViewTextBoxColumn SurnameColumn;
   private System.Windows.Forms.DataGridViewTextBoxColumn MiddleNameColumn;
   private System.Windows.Forms.DataGridViewComboBoxColumn RoleColumn;
-  private System.Windows.Forms.DataGridViewTextBoxColumn LoginColumn;
-  private System.Windows.Forms.DataGridViewTextBoxColumn PasswordColumn;
+  private System.Windows.Forms.DataGridViewComboBoxColumn StatusColumn;
 }

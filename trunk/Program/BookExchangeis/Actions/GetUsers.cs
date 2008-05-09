@@ -5,8 +5,9 @@ using System.Data;
 
 public class GetUsers : Action {
   public GetUsers() : base("GetUsers", typeof(DataTable)) { }
-  override public object Execute() {
+  override public int Execute(out object Result) {
     Request GetUsers = new Request(RequestType.SELECT);
+    GetUsers.AddCommandParameter("users.id_user");
     GetUsers.AddCommandParameter("persons.name");
     GetUsers.AddCommandParameter("persons.surname");
     GetUsers.AddCommandParameter("persons.middle_name");
@@ -20,6 +21,15 @@ public class GetUsers : Action {
     GetUsers.AddFromParameter("user_status");
     GetUsers.AddWhereParameter("persons.id_persons=users.id_user");
     GetUsers.AddWhereParameter("users.id_roles=roles.id_roles");
-    return (DataBaseManager.Instance().ExecuteQuery(GetUsers) as DataSet).Tables[0];
+    try {
+      Result=(DataBaseManager.Instance().ExecuteQuery(GetUsers) as DataSet).Tables[0];
+      return 0;
+    } catch (Exception ex) {
+      Result = null;
+      return 1;
+    }
+  }
+  public override int Execute() {
+    throw new Exception("The method or operation is not implemented.");
   }
 }

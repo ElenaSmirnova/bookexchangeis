@@ -39,6 +39,8 @@
     <Compile Include="Actions\AddPerson.cs" />
     <Compile Include="Actions\AddUser.cs" />
     <Compile Include="Actions\GetUsers.cs" />
+    <Compile Include="Actions\UpdatePerson.cs" />
+    <Compile Include="Actions\UpdateUser.cs" />
     <Compile Include="Forms\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>

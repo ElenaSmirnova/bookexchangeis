@@ -6,12 +6,11 @@ using System.Collections;
 public abstract class Action {
   protected string name;
   protected Type return_type;
-  protected ArrayList Params;
-  public abstract object Execute();
-  public Action(string name, Type return_type, params object[] Params) {
+  public abstract int Execute(out object Result);
+  public abstract int Execute();
+  public Action(string name, Type return_type) {
     this.name = name;
     this.return_type = return_type;
-    this.Params = new ArrayList(Params);
   }
   public string Name {
     get { return name; }

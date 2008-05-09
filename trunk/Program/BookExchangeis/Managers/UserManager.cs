@@ -14,10 +14,20 @@ class UserManager {
   private UserManager() {
       DBManager = DataBaseManager.Instance();
     }
-  public object ExecuteAction(User Usr, Action Act) {
-    if (Usr.HasRight(Act.Name))
-      return Act.Execute();
-    else
+  public int ExecuteAction(User Usr, Action Act, out object Result) {
+    int code;
+    if (Usr.HasRight(Act.Name)) {
+      code = Act.Execute(out Result);
+      return code;
+    } else
+      throw new Exception("This role hasn't this right!");
+  }
+  public int ExecuteAction(User Usr, Action Act) {
+    int code;
+    if (Usr.HasRight(Act.Name)) {
+      code = Act.Execute();
+      return code;
+    } else
       throw new Exception("This role hasn't this right!");
   }
 }
