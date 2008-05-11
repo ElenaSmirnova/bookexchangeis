@@ -15,7 +15,6 @@ partial class AdminForm {
     private void InitializeComponent() {
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.BooksPage = new System.Windows.Forms.TabPage();
-      this.AddBookBt = new System.Windows.Forms.Button();
       this.BooksView = new System.Windows.Forms.DataGridView();
       this.UsersTab = new System.Windows.Forms.TabPage();
       this.SaveBt = new System.Windows.Forms.Button();
@@ -28,20 +27,11 @@ partial class AdminForm {
       this.MiddleNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.RoleColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
       this.StatusColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-      this.PersonsPage = new System.Windows.Forms.TabPage();
-      this.SavePerson = new System.Windows.Forms.Button();
-      this.PersonsView = new System.Windows.Forms.DataGridView();
-      this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabControl1.SuspendLayout();
       this.BooksPage.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.BooksView)).BeginInit();
       this.UsersTab.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.UsersView)).BeginInit();
-      this.PersonsPage.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.PersonsView)).BeginInit();
       this.SuspendLayout();
       // 
       // tabControl1
@@ -51,7 +41,6 @@ partial class AdminForm {
                   | System.Windows.Forms.AnchorStyles.Right)));
       this.tabControl1.Controls.Add(this.BooksPage);
       this.tabControl1.Controls.Add(this.UsersTab);
-      this.tabControl1.Controls.Add(this.PersonsPage);
       this.tabControl1.Location = new System.Drawing.Point(0, -2);
       this.tabControl1.Name = "tabControl1";
       this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -61,7 +50,6 @@ partial class AdminForm {
       // 
       // BooksPage
       // 
-      this.BooksPage.Controls.Add(this.AddBookBt);
       this.BooksPage.Controls.Add(this.BooksView);
       this.BooksPage.Location = new System.Drawing.Point(4, 22);
       this.BooksPage.Name = "BooksPage";
@@ -70,16 +58,6 @@ partial class AdminForm {
       this.BooksPage.TabIndex = 1;
       this.BooksPage.Text = "Books";
       this.BooksPage.UseVisualStyleBackColor = true;
-      // 
-      // AddBookBt
-      // 
-      this.AddBookBt.Location = new System.Drawing.Point(8, 284);
-      this.AddBookBt.Name = "AddBookBt";
-      this.AddBookBt.Size = new System.Drawing.Size(75, 23);
-      this.AddBookBt.TabIndex = 1;
-      this.AddBookBt.Text = "Add book";
-      this.AddBookBt.UseVisualStyleBackColor = true;
-      this.AddBookBt.Click += new System.EventHandler(this.AddBookBt_Click);
       // 
       // BooksView
       // 
@@ -180,67 +158,6 @@ partial class AdminForm {
       this.StatusColumn.HeaderText = "Status";
       this.StatusColumn.Name = "StatusColumn";
       // 
-      // PersonsPage
-      // 
-      this.PersonsPage.Controls.Add(this.SavePerson);
-      this.PersonsPage.Controls.Add(this.PersonsView);
-      this.PersonsPage.Location = new System.Drawing.Point(4, 22);
-      this.PersonsPage.Name = "PersonsPage";
-      this.PersonsPage.Padding = new System.Windows.Forms.Padding(3);
-      this.PersonsPage.Size = new System.Drawing.Size(657, 409);
-      this.PersonsPage.TabIndex = 2;
-      this.PersonsPage.Text = "Persons";
-      this.PersonsPage.UseVisualStyleBackColor = true;
-      // 
-      // SavePerson
-      // 
-      this.SavePerson.Location = new System.Drawing.Point(8, 282);
-      this.SavePerson.Name = "SavePerson";
-      this.SavePerson.Size = new System.Drawing.Size(75, 23);
-      this.SavePerson.TabIndex = 2;
-      this.SavePerson.Text = "Save";
-      this.SavePerson.UseVisualStyleBackColor = true;
-      this.SavePerson.Click += new System.EventHandler(this.SavePerson_Click);
-      // 
-      // PersonsView
-      // 
-      this.PersonsView.AllowUserToDeleteRows = false;
-      this.PersonsView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.PersonsView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-      this.PersonsView.Location = new System.Drawing.Point(6, 3);
-      this.PersonsView.Name = "PersonsView";
-      this.PersonsView.Size = new System.Drawing.Size(639, 273);
-      this.PersonsView.TabIndex = 1;
-      // 
-      // dataGridViewTextBoxColumn1
-      // 
-      this.dataGridViewTextBoxColumn1.DataPropertyName = "id_persons";
-      this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-      this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-      this.dataGridViewTextBoxColumn1.ReadOnly = true;
-      // 
-      // dataGridViewTextBoxColumn4
-      // 
-      this.dataGridViewTextBoxColumn4.DataPropertyName = "name";
-      this.dataGridViewTextBoxColumn4.HeaderText = "Name";
-      this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-      // 
-      // dataGridViewTextBoxColumn5
-      // 
-      this.dataGridViewTextBoxColumn5.DataPropertyName = "Surname";
-      this.dataGridViewTextBoxColumn5.HeaderText = "Surname";
-      this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-      // 
-      // dataGridViewTextBoxColumn6
-      // 
-      this.dataGridViewTextBoxColumn6.DataPropertyName = "Middle_Name";
-      this.dataGridViewTextBoxColumn6.HeaderText = "Middle Name";
-      this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-      // 
       // AdminForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,8 +172,6 @@ partial class AdminForm {
       ((System.ComponentModel.ISupportInitialize)(this.BooksView)).EndInit();
       this.UsersTab.ResumeLayout(false);
       ((System.ComponentModel.ISupportInitialize)(this.UsersView)).EndInit();
-      this.PersonsPage.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.PersonsView)).EndInit();
       this.ResumeLayout(false);
 
     }
@@ -276,12 +191,4 @@ partial class AdminForm {
   private System.Windows.Forms.DataGridViewTextBoxColumn MiddleNameColumn;
   private System.Windows.Forms.DataGridViewComboBoxColumn RoleColumn;
   private System.Windows.Forms.DataGridViewComboBoxColumn StatusColumn;
-  private System.Windows.Forms.Button AddBookBt;
-  private System.Windows.Forms.TabPage PersonsPage;
-  private System.Windows.Forms.DataGridView PersonsView;
-  private System.Windows.Forms.Button SavePerson;
-  private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-  private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-  private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-  private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
 }

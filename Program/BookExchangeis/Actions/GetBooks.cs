@@ -10,7 +10,6 @@ public class GetBooks : Action {
     GetBooks.AddCommandParameter("books.name");
     GetBooks.AddCommandParameter("persons.name");
     GetBooks.AddCommandParameter("persons.surname");
-    GetBooks.AddCommandParameter("persons.middle_name");
     GetBooks.AddFromParameter("books");
     GetBooks.AddFromParameter("persons");
     GetBooks.AddFromParameter("r_books_authors");

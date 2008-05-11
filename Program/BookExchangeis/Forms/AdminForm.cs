@@ -46,42 +46,6 @@ public partial class AdminForm : Form {
       (UsersView.Columns["StatusColumn"] as DataGridViewComboBoxColumn).ValueMember = "user_status_id";
     }
   }
-  private void ApplyPersonsChanges()
-  {
-      DataTable temp = PersonsView.DataSource as DataTable;
-      foreach (DataRow r in temp.Rows)
-      {
-          try
-          {
-              int code;
-              switch (r.RowState)
-              {
-                  case DataRowState.Added:
-                      code = UManager.ExecuteAction(GlobalVars.user,
-                           new AddPerson(r["name"].ToString(), r["surname"].ToString(), r["middle_name"].ToString()));
-                      break;
-                  case DataRowState.Modified:
-                      code = UManager.ExecuteAction(GlobalVars.user,
-                             new UpdatePerson(r["id_persons"].ToString(), r["name"].ToString(), r["surname"].ToString(), r["middle_name"].ToString()));
-                      break;
-              }
-              r.AcceptChanges();
-          }
-          catch (Exception ex)
-          {
-              MessageBox.Show(ex.Message);
-          }
-      }
-  }
-  private void LoadPersonsView()
-  {
-      object Result;
-      int code = UManager.ExecuteAction(GlobalVars.user, new GetPersons(), out Result);
-      if (code == 0)
-      {
-          PersonsView.DataSource = Result;
-      }
-  }
   private void LoadBooksView() {
     object Result;
     int code = UManager.ExecuteAction(GlobalVars.user, new GetBooks(), out Result);
@@ -93,23 +57,11 @@ public partial class AdminForm : Form {
     UManager = UserManager.Instance();
     LoadBooksView();
     LoadUsersView();
-    LoadPersonsView();
   }
   private void AdminForm_FormClosed(object sender, FormClosedEventArgs e) {
       Application.Exit();
   }
   private void SaveBt_Click(object sender, EventArgs e) {
     ApplyUsersChanges();
-  }
-
-  private void SavePerson_Click(object sender, EventArgs e)
-  {
-      ApplyPersonsChanges();
-  }
-
-  private void AddBookBt_Click(object sender, EventArgs e)
-  {
-      new AddBookForm().ShowDialog();
-      LoadBooksView();
   }
 }

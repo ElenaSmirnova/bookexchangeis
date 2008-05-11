@@ -23,11 +23,4 @@ public partial class UserForm : Form {
   private void UserForm_FormClosed(object sender, FormClosedEventArgs e) {
     Application.Exit();
   }
-
-  private void AddBook_Click(object sender, EventArgs e)
-  {
-      new AddBookForm().ShowDialog();
-  }
-
-  
 }
