@@ -31,25 +31,6 @@ public class AddPerson : Action {
     }
   }
   public override int Execute() {
-      Request Count = new Request(RequestType.SELECT);
-      Count.AddCommandParameter("COUNT(*)");
-      Count.AddFromParameter("persons");
-      int c = int.Parse(DataBaseManager.Instance().ExecuteQueryScalar(Count).ToString());
-      Request AddPerson = new Request(RequestType.INSERT);
-      AddPerson.AddCommandParameter("persons");
-      AddPerson.AddValueParameter(new ValueParemeter("id_persons", c + 1));
-      AddPerson.AddValueParameter(new ValueParemeter("name", String.Format("'{0}'", _Name)));
-      AddPerson.AddValueParameter(new ValueParemeter("surname", String.Format("'{0}'", _Surname)));
-      AddPerson.AddValueParameter(new ValueParemeter("middle_name", String.Format("'{0}'", _MiddleName)));
-      try
-      {
-          DataBaseManager.Instance().ExecuteQuery(AddPerson);
-          return 0;
-      }
-      catch (Exception ex)
-      {
-          return 1;
-      }
-
+    throw new Exception("The method or operation is not implemented.");
   }
 }
