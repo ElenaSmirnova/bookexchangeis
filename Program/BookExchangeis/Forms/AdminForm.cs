@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using BookExchangeis.Dialogs;
 
 public partial class AdminForm : Form {
   UserManager UManager;
@@ -64,4 +65,9 @@ public partial class AdminForm : Form {
   private void SaveBt_Click(object sender, EventArgs e) {
     ApplyUsersChanges();
   }
+
+    private void AddUserBt_Click(object sender, EventArgs e)
+    {
+        new AddUserDialog().Show();
+    }
 }

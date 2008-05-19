@@ -41,6 +41,12 @@
     <Compile Include="Actions\GetUsers.cs" />
     <Compile Include="Actions\UpdatePerson.cs" />
     <Compile Include="Actions\UpdateUser.cs" />
+    <Compile Include="Dialogs\AddUserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddUserDialog.Designer.cs">
+      <DependentUpon>AddUserDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,10 @@
     <Compile Include="Managers\DataBaseManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dialogs\AddUserDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddUserDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForm.resx">
       <SubType>Designer</SubType>
       <DependentUpon>AdminForm.cs</DependentUpon>

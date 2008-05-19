@@ -9,3 +9,4 @@ bin\Debug\BookExchangeis.exe
 bin\Debug\BookExchangeis.pdb
 obj\Debug\BookExchangeis.exe
 obj\Debug\BookExchangeis.pdb
+obj\Debug\BookExchangeis.Dialogs.AddUserDialog.resources

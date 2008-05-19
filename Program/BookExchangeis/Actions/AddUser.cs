@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
+using System.Windows.Forms;
 
 public class AddUser : Action {
   string _Name, _Surname, _MiddleName, _id_roles, _log, _pass, _user_status_id;
@@ -30,6 +31,7 @@ public class AddUser : Action {
       DataBaseManager.Instance().ExecuteQuery(AddUser);
       return 0;
     } catch (Exception ex) {
+      MessageBox.Show(ex.ToString());
       return 1;
     }
   }
