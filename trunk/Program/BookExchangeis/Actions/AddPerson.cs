@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
+using System.Windows.Forms;
 
 public class AddPerson : Action {
   string _Name, _Surname, _MiddleName;
@@ -26,6 +27,7 @@ public class AddPerson : Action {
       Result = (c + 1).ToString();
       return 0;
     } catch (Exception ex) {
+      MessageBox.Show(ex.ToString());
       Result = null;
       return 1;
     }
