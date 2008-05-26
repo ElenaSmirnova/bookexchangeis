@@ -31,3 +31,5 @@
 12.	*Основы проектирования реляционных баз данных* [http://www.intuit.ru/department/database/rdbdev/]
 
 13. *Привязка элемента управления Windows Forms DataGrid к источнику данных* [http://msdn.microsoft.com/library/rus/default.asp?url=/library/RUS/vbcon/html/vbtskbindingthedatagridcontroltoanadodataset.asp]
+
+14. *Фильтрация, сортировка* [http://msdn.microsoft.com/en-us/library/system.data.datatable.select.aspx]
